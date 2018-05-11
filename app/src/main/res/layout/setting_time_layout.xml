@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.zs.demo.tablistdemo.view.BorderTextView
+            android:id="@+id/tv_tag_time"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="00:00-22:22"
+            android:textColor="@color/font_gray"
+            android:textSize="13dp"
+            app:strokeWidth="1px"
+            app:cornerRadius="4dp"
+            app:strokeColor="@color/font_lightgray"
+            app:contentBackColor="@color/white"
+            app:followTextColor="true"
+            android:visibility="visible"/>
+
+        <ImageView
+            android:id="@+id/iv_delete_tag"
+            android:layout_width="30dp"
+            android:layout_height="26dp"
+            android:src="@mipmap/ic_delete_img"
+            android:padding="3dp"
+            android:layout_marginRight="-15dp"
+            android:layout_toLeftOf="@+id/tv_tag_time"
+            android:visibility="visible"/>
+
+        <com.zs.demo.tablistdemo.view.BorderTextView
+            android:id="@+id/tv_tag_add"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:maxLines="1"
+            android:text="+ 添加时段"
+            android:textColor="@color/font_lightgray"
+            android:textSize="13dp"
+            app:strokeWidth="1px"
+            app:cornerRadius="4dp"
+            app:strokeColor="@color/font_lightgray"
+            app:contentBackColor="@color/white"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
