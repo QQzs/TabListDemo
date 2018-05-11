@@ -75,7 +75,7 @@ public class TagAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                 @Override
                 public void onClick(View view) {
 
-                    // 局部刷新( 有header要重新计算位置 )
+                    // 局部刷新,只刷新变化的两个item ( 有header要注意是否有影响 )
                     if (mSelectTime != -1){
                         notifyItemChanged(mSelectTime);
                     }
@@ -83,6 +83,7 @@ public class TagAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                     notifyItemChanged(mSelectTime);
 
                     // 也可直接刷新全部
+//                    mSelectTime = position;
 //                    notifyDataSetChanged();
                 }
             });
